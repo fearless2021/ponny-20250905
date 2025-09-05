@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI文档应用引擎立项汇报 - 腾讯文档新战略</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 封面页 -->
+    <section class="hero-section" id="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">AI文档应用查看引擎立项汇报</h1>
+            <p class="hero-subtitle">愿景：打造AI时代的智能查看引擎，让每一份文档都成为最懂用户的AI agent</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">80%</span>
+                    <span class="stat-label">国内80%的Office文件通过QQ微信移动端传输，<br>近5亿用户存在浏览痛点</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10%</span>
+                    <span class="stat-label">期望通过AI将传统文档升级为多模态应用引擎，<br>目标在端外抢占10%IM市场份额，端内打造最好的文档AI应用生态平台</span>
+                </div>
+            </div>
+            <button class="cta-button" onclick="scrollToNext()">开始汇报</button>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-doc">📄</div>
+            <div class="floating-doc">📊</div>
+            <div class="floating-doc">📋</div>
+        </div>
+    </section>
+
+    <!-- 痛点分析 -->
+    <section class="problem-section" id="problem">
+        <div class="container">
+            <h2 class="section-title">现状痛点及机遇</h2>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">📱</div>
+                    <h3>移动端体验差</h3>
+                    <p>传统文档在手机上格式错乱、信息密集、查找困难</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">⏰</div>
+                    <h3>效率低下</h3>
+                    <p>PC时代产物未考虑小屏幕呈现，严重影响用户效率</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🤷</div>
+                    <h3>用户不知如何使用AI</h3>
+                    <p>AI时代来临，但多数用户不知道如何利用AI优化文档</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 解决方案 -->
+    <section class="solution-section" id="solution">
+        <div class="container">
+            <h2 class="section-title">革命性解决方案</h2>
+            <div class="solution-content">
+                <div class="solution-text">
+                    <h3>AI赋能文档预览服务</h3>
+                    <ul class="solution-features">
+                        <li>✨ 深度内容理解</li>
+                        <li>🔄 自适应布局重构</li>
+                        <li>🤖 智能交互功能</li>
+                        <li>📱 移动端优化</li>
+                    </ul>
+                    <p class="solution-highlight">将传统"查看器"自动转变为智能"文档AI应用"</p>
+                </div>
+                <div class="solution-demo">
+                    <div class="demo-before">
+                        <h4>传统文档</h4>
+                        <div class="doc-preview old">
+                            <div class="doc-line"></div>
+                            <div class="doc-line short"></div>
+                            <div class="doc-line"></div>
+                            <div class="doc-line medium"></div>
+                        </div>
+                    </div>
+                    <div class="arrow">→</div>
+                    <div class="demo-after">
+                        <h4>AI智能应用</h4>
+                        <div class="doc-preview new">
+                            <div class="interactive-card">📊 数据可视化</div>
+                            <div class="interactive-card">🔍 智能搜索</div>
+                            <div class="interactive-card">💬 AI问答</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 应用场景 -->
+    <section class="scenarios-section" id="scenarios">
+        <div class="container">
+            <h2 class="section-title">核心应用场景</h2>
+            <div class="scenarios-grid">
+                <div class="scenario-card excel">
+                    <div class="scenario-icon">📊</div>
+                    <h3>Excel → 交互数据应用</h3>
+                    <p>信息表、成员名单、反查数据生成移动端可交互视图</p>
+                    <div class="scenario-images">
+                        <img src="ai表格视图1.png" alt="AI表格视图1" class="scenario-image" onclick="openImageModal(this)">
+                        <img src="ai表格视图2.png" alt="AI表格视图2" class="scenario-image" onclick="openImageModal(this)">
+                    </div>
+                </div>
+                <div class="scenario-card doc">
+                    <div class="scenario-icon">📚</div>
+                    <h3>Doc/PDF/网课文件夹 → 学习网站</h3>
+                    <p>课件和学术文献重构为多媒体学习网站，整合播客和视频</p>
+                    <div class="scenario-images">
+                        <img src="ai课件1.png" alt="AI课件1" class="scenario-image" onclick="openImageModal(this)">
+                        <img src="ai课件2.png" alt="AI课件2" class="scenario-image" onclick="openImageModal(this)">
+                    </div>
+                </div>
+                <div class="scenario-card poster">
+                    <div class="scenario-icon">🎨</div>
+                    <h3>媒体内容 → AI多媒体海报</h3>
+                    <p>自动提取金句观点/重点信息，生成带动效/音效的H5分享页面</p>
+                    <div class="scenario-images">
+                        <img src="ai海报.png" alt="AI海报" class="scenario-image" onclick="openImageModal(this)">
+                        <img src="多媒体海报2.png" alt="AI海报" class="scenario-image" onclick="openImageModal(this)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分享裂变策略 -->
+    <section class="strategy-section" id="strategy">
+        <div class="container">
+            <h2 class="section-title">冷启动策略：以新视图分享传播裂变</h2>
+            <div class="strategy-content">
+                <div class="strategy-flow">
+                    <div class="flow-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>命中文档试用</h3>
+                            <p>前期以命中文档试用策略，精准定位高频使用场景</p>
+                        </div>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>AI多模态生成</h3>
+                            <p>AI生成多模态内容，提供更多样的浏览形态和丰富的分享传播场景</p>
+                        </div>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>H5页面分享</h3>
+                            <p>AI渲染生成动态、精美的H5页面，以最短路径分享到微信群和朋友圈</p>
+                        </div>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>病毒式传播</h3>
+                            <p>接收方可快速分享传播和自己试试生成，形成裂变增长</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="strategy-highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">📱</div>
+                        <h4>微信生态优化</h4>
+                        <p>专为微信群和朋友圈传播优化，降低分享门槛</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">⚡</div>
+                        <h4>最短路径分享</h4>
+                        <p>一键生成精美H5，无需复杂操作即可快速传播</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🔄</div>
+                        <h4>自传播机制</h4>
+                        <p>接收方体验后可立即尝试生成，形成自然裂变</p>
+                    </div>
+                </div>
+                
+                <div class="strategy-images">
+                    <img src="创建者分享流程.png" alt="创建者分享流程" class="scenario-image" onclick="openImageModal(this)">
+                    <img src="接收者分享流程.png" alt="接收者分享流程" class="scenario-image" onclick="openImageModal(this)">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 当前进展 -->
+    <section class="progress-section" id="progress">
+        <div class="container">
+            <h2 class="section-title">当前进展</h2>
+            <div class="progress-content">
+                <div class="progress-intro">
+                    <p class="progress-desc">已完成三个核心场景的demo验证，证明AI文档转换的可行性和用户价值</p>
+                </div>
+                
+                <div class="demo-grid">
+                    <div class="demo-card">
+                        <div class="demo-icon">📅</div>
+                        <h3>课程表生成课程视图应用</h3>
+                        <p>将传统课程表转换为交互式课程视图，支持课程详情查看、时间提醒等功能</p>
+                        <div class="demo-video-placeholder">
+                            <div class="video-link-container">
+                                <a href="https://share.weiyun.com/QqiGQUzJ" target="_blank" class="video-link">
+                                    <div class="video-preview">
+                                        <div class="play-button">▶</div>
+                                        <div class="video-info">
+                                            <h4>课程表演示视频</h4>
+                                            <p>点击观看完整演示</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="demo-card">
+                        <div class="demo-icon">👥</div>
+                        <h3>花名册生成通讯录应用</h3>
+                        <p>将静态花名册转换为可搜索、可筛选的动态通讯录应用</p>
+                        <div class="demo-video-placeholder">
+                            <div class="video-link-container">
+                                <a href="https://share.weiyun.com/zR2ZtkHb" target="_blank" class="video-link">
+                                    <div class="video-preview">
+                                        <div class="play-button">▶</div>
+                                        <div class="video-info">
+                                            <h4>花名册演示视频</h4>
+                                            <p>点击观看完整演示</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="demo-card">
+                        <div class="demo-icon">📊</div>
+                        <h3>成绩统计表生成反查应用</h3>
+                        <p>将成绩表转换为支持多维度查询和统计分析的交互式应用</p>
+                        <div class="demo-video-placeholder">
+                            <div class="video-link-container">
+                                <a href="https://share.weiyun.com/aQvlgRg1" target="_blank" class="video-link">
+                                    <div class="video-preview">
+                                        <div class="play-button">▶</div>
+                                        <div class="video-info">
+                                            <h4>成绩查询演示视频</h4>
+                                            <p>点击观看完整演示</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="progress-summary">
+                    <div class="summary-item">
+                        <span class="summary-number">3</span>
+                        <span class="summary-label">核心场景验证</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">100%</span>
+                        <span class="summary-label">技术可行性</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">MVP</span>
+                        <span class="summary-label">产品原型完成</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目价值 -->
+    <section class="value-section" id="value">
+        <div class="container">
+            <h2 class="section-title">Roadmap与规模预估</h2>
+            <div class="roadmap">
+                <div class="phase-card phase-1">
+                    <div class="phase-number">01</div>
+                    <h3>第一阶段</h3>
+                    <p class="phase-desc">端内头部文档场景触发生成新视图验证可行性</p>
+                    <div class="phase-metric">3-5万 DAU</div>
+                </div>
+                <div class="phase-card phase-2">
+                    <div class="phase-number">02</div>
+                    <h3>第二阶段</h3>
+                    <p class="phase-desc">独立转换功能+微信搜一搜流量，累积更多用户上传文档生成视图数据</p>
+                    <div class="phase-metric">10万 DAU</div>
+                </div>
+                <div class="phase-card phase-3">
+                    <div class="phase-number">03</div>
+                    <h3>第三阶段</h3>
+                    <p class="phase-desc">以用户上传数据建立AI视图模版库，为QQ微信本地文件提供快速套版转换服务</p>
+                    <div class="phase-metric">10% 市场切入</div>
+                </div>
+                <div class="phase-card phase-4">
+                    <div class="phase-number">04</div>
+                    <h3>第四阶段</h3>
+                    <p class="phase-desc">打造AI多模态应用平台，建立AI应用创作者生态及商业化变现</p>
+                    <div class="phase-metric">AI应用创作者生态</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心优势 -->
+    <section class="advantages-section" id="advantages">
+        <div class="container">
+            <h2 class="section-title">核心竞争优势</h2>
+            <div class="advantages-grid">
+                <div class="advantage-item">
+                    <div class="advantage-icon">🎯</div>
+                    <h3>精准意图识别</h3>
+                    <p>AI智能识别文档类型，自动匹配最佳转换方案</p>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">⚡</div>
+                    <h3>极速生成</h3>
+                    <p>丰富模板库支持，套版加速生成，用户体验流畅</p>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">🔄</div>
+                    <h3>病毒式传播</h3>
+                    <p>H5页面便于微信分享，接收方可快速体验和传播</p>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">🏗️</div>
+                    <h3>生态建设</h3>
+                    <p>打造AI应用创作者平台，形成可持续发展生态</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 所需资源支持 -->
+    <section class="resources-section" id="resources">
+        <div class="container">
+            <h2 class="section-title">所需资源支持</h2>
+            <div class="resources-content">
+                <div class="team-overview">
+                    <div class="team-summary">
+                        <h3>核心团队配置</h3>
+                        <div class="team-stats">
+                            <div class="team-stat">
+                                <span class="team-number">10人</span>
+                                <span class="team-label">核心开发团队</span>
+                            </div>
+                            <div class="team-stat">
+                                <span class="team-number">6-8个月</span>
+                                <span class="team-label">MVP开发周期</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="resources-grid">
+                    <div class="resource-card tech">
+                        <div class="resource-header">
+                            <div class="resource-icon">👨‍💻</div>
+                            <h4>开发资源 (4人)</h4>
+                        </div>
+                        <div class="resource-details">
+                            <div class="role-item">
+                                <span class="role-title">前端开发 (1人)</span>
+                                <span class="role-desc">H5应用开发、响应式设计、新交互模版效果实现</span>
+                            </div>
+                            <div class="role-item">
+                                <span class="role-title">后端开发 (1人)</span>
+                                <span class="role-desc">AI引擎接口、文档解析、数据处理服务、模版库搭建</span>
+                            </div>
+                            <div class="role-item">
+                                <span class="role-title">AI算法 (2人)</span>
+                                <span class="role-desc">文档意图识别、内容提取、多模态生成</span>
+                        </div>
+                    </div>
+
+                    <div class="resource-card product">
+                        <div class="resource-header">
+                            <div class="resource-icon">📋</div>
+                            <h4>产品策划 (2人)</h4>
+                        </div>
+                        <div class="resource-details">
+                            <div class="role-item">
+                                <span class="role-title">产品经理 (1人)</span>
+                                <span class="role-desc">需求场景拓展提炼、AI策略设计、用户体验设计、整体功能规划、渠道增长拓展</span>
+                            </div>
+                            <div class="role-item">
+                                <span class="role-title">产品内包 (1人)</span>
+                                <span class="role-desc">场景分析打标、子场景需求跟进、模型效果评测</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resource-card operation">
+                        <div class="resource-header">
+                            <div class="resource-icon">📈</div>
+                            <h4>产品运营 (2人)</h4>
+                        </div>
+                        <div class="resource-details">
+                            <div class="role-item">
+                                <span class="role-title">产品运营 (1人)</span>
+                                <span class="role-desc">用户教育、功能运营推广、创作者生态建设</span>
+                            </div>
+                            <div class="role-item">
+                                <span class="role-title">运营内包 (1人)</span>
+                                <span class="role-desc">AI模板库建设、案例制作、用户反馈收集</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resource-card design">
+                        <div class="resource-header">
+                            <div class="resource-icon">🎨</div>
+                            <h4>设计资源 (2人)</h4>
+                        </div>
+                        <div class="resource-details">
+                            <div class="role-item">
+                                <span class="role-title">UI/UX设计师 (1人)</span>
+                                <span class="role-desc">界面设计、用户体验优化、交互设计</span>
+                            </div>
+                            <div class="role-item">
+                                <span class="role-title">视觉设计师 (1人)</span>
+                                <span class="role-desc">AI模板设计、品牌视觉、多媒体素材制作</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resource-card qa">
+                        <div class="resource-header">
+                            <div class="resource-icon">🔍</div>
+                            <h4>测试资源 (1-2人)</h4>
+                        </div>
+                        <div class="resource-details">
+                            <div class="role-item">
+                                <span class="role-title">测试工程师 (1人)</span>
+                                <span class="role-desc">功能测试、性能测试、兼容性测试</span>
+                            </div>
+                            <div class="role-item">
+                                <span class="role-title">AI效果测试 (1人)</span>
+                                <span class="role-desc">AI生成效果评估、模型准确率验证</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 行动号召 -->
+    <section class="cta-section" id="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>抓住AI时代机遇</h2>
+                <p>打破Office文档心智，打造下一代AI智能应用文档</p>
+                <div class="cta-buttons">
+                    <button class="btn-primary">立即启动项目</button>
+                    <a href="https://doc.weixin.qq.com/doc/w3_AFgAfgbdAFwCNhhmyDidgQ6KknXO4?scode=AJEAIQdfAAo9aWw82AAFgAfgbdAFw" target="_blank" class="btn-secondary">查看详细方案</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
